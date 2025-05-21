@@ -1,0 +1,17 @@
+<div class="content">
+    <h2>{{title}}</h2>
+    <p>{{description}}</p>
+    <form class="search-form">
+        <mat-form-field appearance="outline" class="form-field">
+            <input matInput placeholder="Placeholder">
+            <div matSuffix class="search-sufflix">
+                <button class="search-button" mat-icon-button><mat-icon>search</mat-icon></button>
+                <button class="search-button" mat-button [matMenuTriggerFor]="aboveMenu">English-Vietnamese</button>
+                <mat-menu #aboveMenu="matMenu" yPosition="below">
+                    <button mat-menu-item>English-Vietnamese</button>
+                    <button mat-menu-item>Vietnamese-English</button>
+                </mat-menu>
+            </div>
+        </mat-form-field>
+    </form>
+</div>
