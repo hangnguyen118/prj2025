@@ -1,0 +1,11 @@
+.section-1 {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.section-2 {
+    display: flex;
+    background-color: aqua;
+}
+.left-side, .right-side {
+    width: 50%;
+}
